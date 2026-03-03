@@ -3,11 +3,12 @@ require('dotenv').config();
 module.exports = {
   port: parseInt(process.env.PORT) || 3000,
   env: process.env.NODE_ENV || 'development',
+  databaseUrl: process.env.DATABASE_URL || '',
   db: {
-    dialect: process.env.DB_DIALECT || 'sqlite',
+    dialect: process.env.DB_DIALECT || (process.env.DATABASE_URL ? 'postgres' : 'sqlite'),
     storage: process.env.DB_STORAGE || './database.sqlite',
     host: process.env.DB_HOST || '127.0.0.1',
-    port: parseInt(process.env.DB_PORT) || 3306,
+    port: parseInt(process.env.DB_PORT) || 5432,
     name: process.env.DB_NAME || 'pet_app',
     user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || '',

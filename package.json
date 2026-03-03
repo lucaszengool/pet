@@ -4,10 +4,9 @@
   "description": "宠我吧 - 一站式宠物服务平台",
   "private": true,
   "scripts": {
-    "install:all": "cd pet-app && npm install && cd ../pet-app-server && npm install",
+    "postinstall": "cd pet-app && npm install && cd ../pet-app-server && npm install",
     "build:frontend": "cd pet-app && npm run build:h5",
-    "postbuild:frontend": "cp -r pet-app/dist/build/h5/* pet-app-server/public/",
-    "build": "npm run build:frontend && npm run postbuild:frontend",
+    "build": "npm run build:frontend && mkdir -p pet-app-server/public && cp -r pet-app/dist/build/h5/* pet-app-server/public/",
     "start": "cd pet-app-server && npm start",
     "dev": "cd pet-app-server && npm run dev"
   },
