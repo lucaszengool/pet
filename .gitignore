@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+pet-app/dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database (local dev)
+pet-app-server/database.sqlite
+
+# Uploads (local dev)
+pet-app-server/uploads/*
+!pet-app-server/uploads/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude
+.claude/
+
+# WeChat mini program output
+pet-app/dist/dev/mp-weixin/
+pet-app/dist/build/mp-weixin/

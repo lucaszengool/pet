@@ -1,0 +1,106 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "navigationBarBackgroundColor": "#FFF8E1",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/publish/index",
+      "style": {
+        "navigationBarTitleText": "发布",
+        "navigationBarBackgroundColor": "#FFF8E1",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "navigationBarBackgroundColor": "#FFF8E1",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pet-detail/index",
+      "style": {
+        "navigationBarTitleText": "宠物详情",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/service-detail/index",
+      "style": {
+        "navigationBarTitleText": "服务详情",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/product-detail/index",
+      "style": {
+        "navigationBarTitleText": "商品详情",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/index",
+      "style": {
+        "navigationBarTitleText": "聊天",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/order/index",
+      "style": {
+        "navigationBarTitleText": "我的订单",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationBarBackgroundColor": "#FFF8E1"
+      }
+    },
+    {
+      "path": "pages/pet-profile-setup/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宠我吧",
+    "navigationBarBackgroundColor": "#FFF8E1",
+    "backgroundColor": "#F5F5F5"
+  }
+}
